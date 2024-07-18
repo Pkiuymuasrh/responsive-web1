@@ -221,31 +221,89 @@ nav{
     font-weight: 200;
 }
 #page2 #goola{
-    height: 30vw;
-    width: 30vw;
+    height: 32vw;
+    width: 32vw;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(to top right,#FE320A,#ff671b);
+    background: linear-gradient(to top right,#ff2d03,#ff5c0b);
     top: 58%;
     left: 25%;
     filter: blur(20px);
     animation-name: goola;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
 }
 @keyframes goola{
     from{
-        transform: translate(10%,-10%);
+        filter: blur(20px);
+        transform: translate(10%,-10%) skew(0);
     }
     to{
-        transform: translate(-10%,10%);
+        filter: blur(30px);
+        transform: translate(-10%,10%) skew(-12deg);
     }
 }
 
 #page3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+.elem{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #38383864;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.elem h3{
+    color: #000;
+    font-size: 1.5vw;
+    text-align: right;
+}
+.elem h5{
+    color: #9b9996;
+    font-size: 1vw;
+    text-align: right;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+.elem:hover .overlay{
+    top:  0;
+}
+.overlay{
+    
+    
+} 
+#fixed-image{
+    height: 30vw;
+    width: 22vw;
+    /* background-color: #FE320A; */
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 27%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
