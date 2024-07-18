@@ -116,7 +116,7 @@ nav{
     filter: blur(25px);
     position: absolute;
     animation-name: anime2;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -129,7 +129,7 @@ nav{
     filter: blur(25px);
     position: absolute;
     animation-name: anime1;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -155,6 +155,7 @@ nav{
     width: 100%;
     background-color: #EFEAE3;
     padding: 8vw 0;
+    position: relative;
 }
 #moving-text{
     overflow-x: auto;
@@ -191,4 +192,60 @@ nav{
     to{
         transform: translateX(-100%);
     }
+}
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+    padding: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+#page2-bottom h1{
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
+}
+#bottom-part2{
+    width: 20%;
+    /* background-color: aqua; */
+}
+#bottom-part2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+#bottom-part2 p{
+    font-weight: 200;
+}
+#page2 #goola{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#FE320A,#ff671b);
+    top: 58%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: goola;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes goola{
+    from{
+        transform: translate(10%,-10%);
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
 }
