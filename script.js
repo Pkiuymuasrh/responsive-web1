@@ -27,6 +27,10 @@ function swiperAnimation(){
       slidesPerView: "auto",
       centeredSlides: false,
       spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
 }
 
